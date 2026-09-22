@@ -1,0 +1,21 @@
+Lightweight Monocular Depth Estimation for Ground Vehicle Obstacle Awareness 
+轻量级单目深度估计与地面车辆障碍物感知研究
+
+一个基于 Monodepth2 / LiteMono 的单目深度估计对比项目，并在预测深度图基础上做一个简单的地面车辆障碍物远近可视化 demo。
+
+1. 参考车载单目视觉深度估计论文，确定项目框架
+2. 使用 Monodepth2 作为 baseline
+3. 使用 MiDaS 和 Lite-Mono 作为对比模型
+4. 准备道路测试图片（KITTI数据集（自动驾驶领域最经典的道路场景数据集））
+5. 三个模型分别生成深度图
+6. 对深度图进行统一归一化
+7. 设计 near / medium / far 区域划分方法（创新点）
+8. 生成 obstacle awareness map
+9. 比较不同模型在道路场景下的表现
+10. 分析优点、局限和失败案例
+11. 写 dissertation
+12. 准备 demo 和答辩图
+
+Monodepth2 (2019)	Improves depth estimation accuracy.	提高深度预测精度。
+MiDaS (2020)	Improves generalization across different scenes.	提高模型在不同场景下的适应能力。
+Lite-Mono (2023)	Makes depth estimation models smaller and faster.	让模型更小、更快。
